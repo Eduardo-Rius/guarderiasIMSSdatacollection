@@ -8,6 +8,7 @@ const RegistrationForm = () => {
   const [formData, setFormData] = useState({
     nombre: '',
     apellidos: '',
+    gradoAcademico: '',
     cargo: '',
     correo: '',
     telefono: '',
@@ -57,7 +58,7 @@ const RegistrationForm = () => {
       
       // Opcional: Resetear el formulario para el siguiente registro
       setFormData({
-        nombre: '', apellidos: '', cargo: '', correo: '', telefono: '', numeroGuarderia: '',
+        nombre: '', apellidos: '', gradoAcademico: '', cargo: '', correo: '', telefono: '', numeroGuarderia: '',
         nombreGuarderia: '', tipoGuarderia: '', estado: '', localidad: '', municipio: '',
         calle: '', colonia: '', numeroExterior: '', codigoPostal: '', horarioAtencion: '',
         zonaSupervision: '', guarderiasSupervisadas: '', telefonoSupervisor: '', otroCargo: ''
@@ -104,6 +105,19 @@ const RegistrationForm = () => {
         <div className="form-group">
           <label className="form-label" htmlFor="apellidos">Apellidos</label>
           <input required type="text" id="apellidos" name="apellidos" className="form-input" value={formData.apellidos} onChange={handleChange} placeholder="Ej. González Pérez" />
+        </div>
+        <div className="form-group">
+          <label className="form-label" htmlFor="gradoAcademico">Grado Académico</label>
+          <select required id="gradoAcademico" name="gradoAcademico" className="form-select" value={formData.gradoAcademico} onChange={handleChange}>
+            <option value="">Seleccione un grado...</option>
+            <option value="Bachillerato">Bachillerato</option>
+            <option value="Técnico">Técnico</option>
+            <option value="Licenciatura">Licenciatura</option>
+            <option value="Especialidad">Especialidad</option>
+            <option value="Maestría">Maestría</option>
+            <option value="Doctorado">Doctorado</option>
+            <option value="Otro">Otro</option>
+          </select>
         </div>
         <div className="form-group">
           <label className="form-label" htmlFor="cargo">Cargo</label>
