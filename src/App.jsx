@@ -21,29 +21,13 @@ function App() {
           padding: '0 1.5rem',
           display: 'flex',
           alignItems: 'center',
-          gap: '1rem'
+          justifyContent: 'center',
+          textAlign: 'center'
         }}>
-          {/* Logo IMSS (Using the uploaded inverted image, matching the background color) */}
-          <div style={{ 
-            display: 'flex', 
-            alignItems: 'center', 
-            justifyContent: 'center',
-            height: '60px', 
-            flexShrink: 0
-          }}>
-            <img 
-              src="/IMSS-Logo_inverso.jpg" 
-              alt="Logo IMSS" 
-              style={{ height: '100%', objectFit: 'contain' }} 
-            />
-          </div>
           <div>
             <h1 style={{ color: 'white', margin: 0, fontSize: '1.25rem', fontWeight: 600 }}>
-              Instituto Mexicano del Seguro Social
-            </h1>
-            <p style={{ margin: 0, fontSize: '0.875rem', opacity: 0.9 }}>
               Sistema de Recolección de Datos de Guarderías
-            </p>
+            </h1>
           </div>
         </div>
       </header>
