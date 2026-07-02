@@ -69,7 +69,7 @@ function App() {
         marginTop: 'auto'
       }}>
         <p style={{ fontSize: '0.875rem', maxWidth: '800px', margin: '0 auto' }}>
-          La información recopilada será tratada de forma confidencial y utilizada exclusivamente para fines de la Aplicación de Guarderías IMSS.
+          La información recopilada será tratada de forma confidencial y utilizada exclusivamente para fines de la Aplicación de Guarderías.
         </p>
       </footer>
     </div>
